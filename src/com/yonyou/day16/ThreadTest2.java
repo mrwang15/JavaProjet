@@ -1,17 +1,17 @@
 package com.yonyou.day16;
 
 /**
- * @Author Íõ¼ÑÅô
+ * @Author ç‹ä½³é¹
  * @Date 2022/1/17 10:04
  * @Description
- *      Ïß³ÌµÄµÚ¶şÖÖ´´½¨·½Ê½
+ *      çº¿ç¨‹çš„ç¬¬äºŒç§åˆ›å»ºæ–¹å¼
  */
 public class ThreadTest2 {
     public static void main(String[] args) {
         Thread thread = new Thread(new MyThread2());
         thread.start();
         for (int i = 0; i <100 ; i++) {
-            System.out.println(Thread.currentThread().getName()+"¿ªÊ¼ÔËĞĞ   "+i);
+            System.out.println(Thread.currentThread().getName()+"å¼€å§‹è¿è¡Œ   "+i);
         }
     }
 
@@ -22,7 +22,9 @@ class MyThread2 implements Runnable{
     @Override
     public void run() {
         for (int i = 0; i <100 ; i++) {
-            System.out.println(Thread.currentThread().getName()+"¿ªÊ¼ÔËĞĞ   "+i);
+            System.out.println(Thread.currentThread().getName()+"å¼€å§‹è¿è¡Œ   "+i);
+            System.out.println(Thread.currentThread().getName()+"å¼€å§‹è¿è¡Œ   "+i);
+            
         }
     }
 }
